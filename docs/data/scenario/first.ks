@@ -1,46 +1,60 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="卒業を目指して"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「授業を選択して留年を回避しよう」[l][r]
 
-メロスは激怒した。[l][r]
+まずは...[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
-
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*hisshuu1] →実験！ [endlink][r]
+[link target=*sentaku1] →体育！ [endlink][r]
 [s]
 
-*tag_sleep
+*hisshuu1
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=run.jpg time=500]
+continue... [l][r]
+次に選択するのは...[l][r]
+[link target=*hisshuu2] →量子力学！ [endlink][r]
+[link target=*sentaku1] →マクロ経済学！ [endlink][r]
+[s]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+*hisshuu2
 
-【 BAD END 】[l][cm]
+[cm]
 
-[jump target=*start]
+[bg storage=run.jpg time=500]
+continue... [l][r]
+次に選択するのは...[l][r]
+[link target=*sentaku1] →マーケティング！ [endlink][r]
+[link target=*hisshuu3] →ソフトウェア開発！ [endlink][r]
+[s]
 
-*tag_run
+*hisshuu3
+
+[cm]
 
 [bg storage=run.jpg time=500]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+進級おめでとう！(卒業できるとは言っていない)
 
 【 GOOD END 】[l][cm]
+
+[jump target=*start]
+
+*sentaku1
+
+[bg storage=sleep.jpg time=500]
+
+[cm]
+もう一年遊べるよ！[l][r]
+
+【 BAD END 】[l][cm]
 
 [jump target=*start]
